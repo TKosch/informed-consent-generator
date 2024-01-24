@@ -203,6 +203,7 @@
             $("select[name='selectInstitution']").append(new Option('University of Regensburg', "University of Regensburg"));
             $("select[name='selectInstitution']").append(new Option('University of Stuttgart', "University of Stuttgart"));
             $("select[name='selectInstitution']").append(new Option('Humboldt University of Berlin', "Humboldt University of Berlin"));
+            $("select[name='selectInstitution']").append(new Option('LMU Munich', "LMU Munich"));
 
             $("select[name='selectResearch']").append(new Option('Please select', ""));
             $("select[name='selectResearch']").append(new Option('Online study (survey, apps, web studies, etc.)', "online study"));
@@ -327,6 +328,7 @@
                 case "University of Regensburg": str += "<div class='row' id='firstItem'><div class='col'><p><img src='img/regensburglogo.png' class='float-right' width='125px' alt='Logo' /></p></a></div></div>"; break;
                 case "University of Stuttgart": str += "<div class='row' id='firstItem'><div class='col'><p><img src='img/stuttgartlogo.jpg' class='float-right' width='125px' alt='Logo' /></p></a></div></div>"; break;
                 case "Humboldt University of Berlin": str += "<div class='row' id='firstItem'><div class='col'><p><img src='img/hu-berlin-logo.png' class='float-right' width='125px' alt='Logo' /></p></a></div></div>"; break;
+                case "LMU Munich": str += "<div class='row' id='firstItem'><div class='col'><p><img src='img/lmu-logo.png' class='float-right' width='125px' alt='Logo' /></p></a></div></div>"; break;
             }
  
 			// TITLE
@@ -528,7 +530,7 @@
 					country = "Germany";
 				break;
                 case "University of Regensburg": 
-					street = "Universit�tsstra�e 31";
+					street = "Universitätsstrasse 31";
 					zip = "93053";
 					city = "Regensburg";
 					country = "Germany";
@@ -543,6 +545,12 @@
 					street = "Rudower Chaussee 25";
 					zip = "12489";
 					city = "Berlin";
+					country = "Germany";
+				break;
+                case "LMU Munich": 
+					street = "Frauenlobstrasse 7a";
+					zip = "80337";
+					city = "Munich";
 					country = "Germany";
 				break;
             }
